@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Controladora {
     ControladoraPersistencia controlPersi;// = new ControladoraPersistencia();
-
+    
     public Controladora() {
         controlPersi = new ControladoraPersistencia();
     }
@@ -27,7 +27,7 @@ public class Controladora {
             
             if(usu.getNombreUsuario().equals(usuario)){
                 
-                if(usu.getContraseña().equals(contrasenia)){
+                if(usu.getContrasenia().equals(contrasenia)){
                     
                     mensaje = "Usuario y Contraseña correctos. Bienvenido/a!";
                     return mensaje;
